@@ -1,18 +1,18 @@
-202444068_c
 #include <stdio.h>
-#include <stdlib.h>
 
-int main(void)
-{
-    system("title 정수형 데이터의 자릿수 지정 형식");
-    
-    printf("|%d|", 358);
-    printf(":정수형 기본 자릿수\n");
-    
-    printf("|%5d|", 358);
-    printf(": 전체 자릿수 5개\n");
-    
-    printf("|%05d|", 358);
-    printf(": 전체 자릿수 5개이고 빈칸은 0으로 채움\n");
+int main(){
+    int n, product = 1;
+    printf("양의 정수를 입력하세요: ");
+    scanf("%d", &n);
+
+    int i = n;
+    while(i>=1){
+        product *=i;
+        i++;
+    }
+
+    printf("1부터 %d까지의 곱은 %d입니다.\n", n, product);
+
     return 0;
 }
+//잘못된 부분은?
